@@ -9,7 +9,6 @@ describe("ERC20Contract", function () {
   let someAddress: SignerWithAddress;
   let someOtherAddress: SignerWithAddress;
 
-
   beforeEach(async function(){
     const ERC20ContractFactory = await ethers.getContractFactory("ERC20");
     ERC20Contract = await ERC20ContractFactory.deploy("hello", "SYM");
